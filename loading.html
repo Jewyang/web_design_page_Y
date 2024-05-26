@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading Component</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.75);
+      margin: 0;
+    }
+    .container {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 28rem;
+      width: 100%;
+    }
+    .pulse-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .dot {
+      background-color: #1a202c;
+      border-radius: 50%;
+    }
+    .dot1 {
+      height: 3rem;
+      width: 3rem;
+      animation: pulse 2s infinite;
+    }
+    .dot2 {
+      height: 2rem;
+      width: 2rem;
+      animation: bounce 2s infinite;
+    }
+    .dot3 {
+      height: 1.5rem;
+      width: 1.5rem;
+      animation: bounce-slow 2s infinite;
+    }
+    .loading-text {
+      margin-top: 1rem;
+      color: #4a5568;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+    .info-text {
+      margin-top: 0.5rem;
+      color: #4a5568;
+      font-size: 1rem;
+    }
+    .buttons-container {
+      margin-top: 1rem;
+      display: flex;
+      gap: 1rem;
+    }
+    .buttons-container button {
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .buttons-container button:hover {
+      filter: brightness(0.8);
+    }
+    .cancel-button {
+      background-color: #1a202c;
+      color: #ffffff;
+    }
+    .retry-button {
+      background-color: #3b82f6;
+      color: #ffffff;
+    }
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.5);
+      }
+    }
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-0.5rem);
+      }
+    }
+    @keyframes bounce-slow {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-0.25rem);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="pulse-container">
+      <div class="dot dot1"></div>
+      <div class="dot dot2"></div>
+      <div class="dot dot3"></div>
+      <div class="loading-bar-container">
+        <div class="loading-bar"></div>
+      </div>
+    </div>
+    <h3 class="loading-text">Loading...</h3>
+    <p class="info-text">Please wait while we prepare your content.</p>
+    <div class="buttons-container">
+      <button class="cancel-button">Cancel</button>
+      <button class="retry-button">Retry</button>
+    </div>
+  </div>
+
+  <script>
+    // 2.5~3.5초 사이의 랜덤한 시간 동안 기다린 후 다른 페이지로 이동
+    setTimeout(function() {
+      window.location.href = 'homepage.html';
+    }, Math.floor(Math.random() * 1001) + 2500); // 2500~3500 밀리초 사이의 랜덤한 시간 설정
+  </script>
+</body>
+</html>

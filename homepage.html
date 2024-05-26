@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HomePage</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+  <header class="bg-gray-900 text-white py-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center">
+        <a class="text-2xl font-bold" href="#">Physics Hub</a>
+      </div>
+      <nav class="hidden md:flex space-x-4">
+        <a class="hover:text-gray-400 font-bold" href="#">프로필</a>
+        <a class="hover:text-gray-400 font-bold" href="#">오답분석</a>
+      </nav>
+      <button class="md:hidden text-2xl focus:outline-none">
+        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="4" y1="12" x2="20" y2="12"></line>
+          <line x1="4" y1="6" x2="20" y2="6"></line>
+          <line x1="4" y1="18" x2="20" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+  <main>
+    <section class="bg-gray-100 py-12 relative overflow-hidden">
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="space-y-4 z-10">
+          <h1 class="text-4xl font-bold">물리학의 경이로운 세계 탐험하기</h1>
+          <p class="text-gray-600">
+            물리학의 매력적인 세계에 빠져보세요. 우리 우주를 지배하는 근본 원리를 발견하세요.
+          </p>
+          <p class="text-gray-600 font-bold">
+            자세한 설명을 원한다면 클릭해 주세요.
+          </p>
+          <div class="flex space-x-4">
+            <a class="bg-gray-900 text-white px-8 py-3 rounded-md hover:bg-gray-800" style="white-space: nowrap;" href="#">힘과평형</a>
+            <a class="bg-gray-900 text-white px-8 py-3 rounded-md hover:bg-gray-800" style="white-space: nowrap;" href="#">물체의 운동(1)</a>
+            <a class="bg-gray-900 text-white px-8 py-3 rounded-md hover:bg-gray-800" style="white-space: nowrap;" href="#">물체의 운동(2)</a>
+            <a class="bg-gray-900 text-white px-8 py-3 rounded-md hover:bg-gray-800" style="white-space: nowrap;" href="#">일반 상대성 이론</a>
+            <a class="bg-gray-900 text-white px-8 py-3 rounded-md hover:bg-gray-800" style="white-space: nowrap;" href="#">일과 에너지</a>
+          </div>
+        </div>
+        <div class="relative z-10">
+          
+        </div>
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden">
+          <img alt="Background Image" class="w-full h-full object-cover opacity-20 animate-float" src="data:image/jpeg;base64,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" style="aspect-ratio: 1920/1080; object-fit: cover;" width="1920" height="1080">
+        </div>
+      </div>
+    </section>
+    <section class="py-12">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-8">Main Topics</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img alt="힘과평형 관련 사진" class="w-full h-48 object-cover" src="/mechanics.jpg" style="aspect-ratio: 400/250; object-fit: cover;" srcset="/mechanics-400.jpg 400w, /mechanics-800.jpg 800w, /mechanics-1200.jpg 1200w" sizes="(max-width: 600px) 480px, 800px" width="400" height="250">
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">힘과평형</h3>
+              <p class="text-gray-600 mb-4">공백란 입니다.</p>
+              <a class="bg-gray-900 text-white px-4 py-2 rounded-md hover:bg-gray-800" href="#">시작하기</a>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img alt="물체의 운동 관련 사진" class="w-full h-48 object-cover" src="/electromagnetism.jpg" style="aspect-ratio: 400/250; object-fit: cover;" srcset="/electromagnetism-400.jpg 400w, /electromagnetism-800.jpg 800w, /electromagnetism-1200.jpg 1200w" sizes="(max-width: 600px) 480px, 800px" width="400" height="250">
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">물체의 운동(1)</h3>
+              <p class="text-gray-600 mb-4">공백란 입니다.</p>
+              <a class="bg-gray-900 text-white px-4 py-2 rounded-md hover:bg-gray-800" href="#">시작하기</a>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img alt="물체의 운동 관련 사진" class="w-full h-48 object-cover" src="/thermodynamics.jpg" style="aspect-ratio: 400/250; object-fit: cover;" srcset="/thermodynamics-400.jpg 400w, /thermodynamics-800.jpg 800w, /thermodynamics-1200.jpg 1200w" sizes="(max-width: 600px) 480px, 800px" width="400" height="250">
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">물체의 운동(2)</h3>
+              <p class="text-gray-600 mb-4">공백란 입니다.</p>
+              <a class="bg-gray-900 text-white px-4 py-2 rounded-md hover:bg-gray-800" href="#">시작하기</a>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img alt="상대성 이론 관련 사진" class="w-full h-48 object-cover" src="/mechanics.jpg" style="aspect-ratio: 400/250; object-fit: cover;" srcset="/mechanics-400.jpg 400w, /mechanics-800.jpg 800w, /mechanics-1200.jpg 1200w" sizes="(max-width: 600px) 480px, 800px" width="400" height="250">
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">일반 상대성 이론</h3>
+              <p class="text-gray-600 mb-4">공백란 입니다.</p>
+              <a class="bg-gray-900 text-white px-4 py-2 rounded-md hover:bg-gray-800" href="#">시작하기</a>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img alt="일과 에너지 관련 사진" class="w-full h-48 object-cover" src="/mechanics.jpg" style="aspect-ratio: 400/250; object-fit: cover;" srcset="/mechanics-400.jpg 400w, /mechanics-800.jpg 800w, /mechanics-1200.jpg 1200w" sizes="(max-width: 600px) 480px, 800px" width="400" height="250">
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">일과 에너지</h3>
+              <p class="text-gray-600 mb-4">공백란 입니다.</p>
+              <a class="bg-gray-900 text-white px-4 py-2 rounded-md hover:bg-gray-800" href="#">시작하기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="container mx-auto flex justify-between items-center">
+      <div>
+        <p>© 2024 서양오리. 모든 권리 보유됨.</p>
+      </div>
+      <nav class="hidden md:flex space-x-4">
+        <a class="hover:text-gray-400" href="#">소개</a>
+        <a class="hover:text-gray-400" href="#">문의</a>
+        <a class="hover:text-gray-400" href="#">자료</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
